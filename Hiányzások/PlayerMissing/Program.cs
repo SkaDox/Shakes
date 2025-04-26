@@ -7,20 +7,32 @@ using System.Text.RegularExpressions;
 
 class Program
 {
+<<<<<<< HEAD
     const string JatekosokFile = "jatekosok.txt";
+=======
+    const string NevekFile = "nevek.txt";
+>>>>>>> 0996967db724a3ade6ecf0b16ab7715fbe3b3252
     const string HianyzasokFile = "hianyzasok.txt";
     const string NapiFile = "napi.txt";
     const string EredmenyFile = "eredmeny.txt";
 
     static void Main()
     {
+<<<<<<< HEAD
         if (!File.Exists(JatekosokFile) || !File.Exists(HianyzasokFile) || !File.Exists(NapiFile))
+=======
+        if (!File.Exists(NevekFile) || !File.Exists(HianyzasokFile) || !File.Exists(NapiFile))
+>>>>>>> 0996967db724a3ade6ecf0b16ab7715fbe3b3252
         {
             Console.Error.WriteLine("❌ One or more required files are missing!");
             return;
         }
 
+<<<<<<< HEAD
         var nevek = File.ReadAllLines(JatekosokFile)
+=======
+        var nevek = File.ReadAllLines(NevekFile)
+>>>>>>> 0996967db724a3ade6ecf0b16ab7715fbe3b3252
             .Select(line => line.Trim())
             .Where(line => !string.IsNullOrEmpty(line))
             .ToList();
