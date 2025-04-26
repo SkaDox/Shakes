@@ -8,18 +8,18 @@ class Program
 {
     static void Main()
     {
-        string inputFile = "players.txt";
+        string inputFile = "jatekosok.txt";
         string lastWeekFile = "lastweek.txt";
         string thisWeekFile = "thisweek.txt";
-        string resultFile = "result.txt";
+        string resultFile = "fejlodes-eredmeny.txt";
 
         if (!File.Exists(inputFile))
         {
-            Console.WriteLine("❌ A 'players.txt' fájl nem található.");
+            Console.WriteLine("❌ A 'jatekosok.txt' fájl nem található.");
             return;
         }
 
-        // Aktuális játékosok beolvasása
+        // Aktuális játékosok beolvasása (Regex meghagyva, ahogy kérted)
         string[] currentLines = File.ReadAllLines(inputFile);
         var currentPlayers = new Dictionary<string, int>();
 
@@ -34,27 +34,25 @@ class Program
             }
         }
 
-        // thisweek.txt-be mentés
+        // thisweek.txt-be mentés (ABC sorrendben)
         using (StreamWriter thisWeekWriter = new StreamWriter(thisWeekFile))
         {
-            foreach (var player in currentPlayers)
+            foreach (var player in currentPlayers.OrderBy(p => p.Key))
             {
                 thisWeekWriter.WriteLine($"{player.Key} - {player.Value}");
             }
         }
 
-        // Előző heti játékosok beolvasása
+        // Előző heti játékosok beolvasása (egyszerű split, Regex helyett)
         var lastWeekPlayers = new Dictionary<string, int>();
         if (File.Exists(lastWeekFile))
         {
             foreach (var line in File.ReadAllLines(lastWeekFile))
             {
-                var match = Regex.Match(line, @"^(.*?) - (\d+)$");
-                if (match.Success)
+                var parts = line.Split(" - ");
+                if (parts.Length == 2 && int.TryParse(parts[1], out int level))
                 {
-                    string name = match.Groups[1].Value.Trim();
-                    int level = int.Parse(match.Groups[2].Value);
-                    lastWeekPlayers[name] = level;
+                    lastWeekPlayers[parts[0].Trim()] = level;
                 }
             }
         }
@@ -65,17 +63,19 @@ class Program
         {
             string name = player.Key;
             int currentLevel = player.Value;
-            int lastLevel = lastWeekPlayers.ContainsKey(name) ? lastWeekPlayers[name] : 0;
+            lastWeekPlayers.TryGetValue(name, out int lastLevel);
             int difference = currentLevel - lastLevel;
             results.Add((name, currentLevel, difference));
         }
 
-        // Eredmények mentése, +1 alatti fejlődés előtt vonal húzása
+        // Eredmények mentése
         using (StreamWriter resultWriter = new StreamWriter(resultFile))
         {
             bool lineWritten = false;
 
-            foreach (var entry in results.OrderByDescending(r => r.diff))
+            foreach (var entry in results
+                .OrderByDescending(r => r.diff)
+                .ThenByDescending(r => r.level))
             {
                 if (!lineWritten && entry.diff < 1)
                 {
@@ -88,6 +88,6 @@ class Program
             }
         }
 
-        Console.WriteLine("✅ result.txt frissítve, fejlődés szerint rendezve, vonallal elválasztva a +1 alattiakat.");
+        Console.WriteLine("✅ Sikeresen kiszámolva a fejlődés minden céhtagnál.");
     }
 }

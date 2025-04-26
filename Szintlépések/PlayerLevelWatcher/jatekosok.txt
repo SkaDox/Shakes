@@ -1,15 +1,15 @@
 <voffset=0.8em><sprite="class_icons" name="necromancer_icon"> Warden (330. szint)
 <voffset=0.8em><sprite="class_icons" name="paladin_icon"> AdriánL (321. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="battlemage_icon"> Apollo Creed (299. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> KOKA (297. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="battlemage_icon"> Apollo Creed (399. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> KOKA (299. szint)</voffset>
 <voffset=0.8em><sprite="class_icons" name="paladin_icon"> Káosz Profeszor (296. szint)</voffset>
 <voffset=0.8em><sprite="class_icons" name="berserker_icon"> KleqoNN (290. szint)</voffset>
 <voffset=0.8em><sprite="class_icons" name="bard_icon"> BvBard (285. szint)</voffset>
 <voffset=0.8em><sprite="class_icons" name="paladin_icon"> HiIamMark00 (279. szint)</voffset>
 <voffset=0.8em><sprite="class_icons" name="berserker_icon"> Sárgacímke (265. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="mage_icon"> MrNoob (263. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="mage_icon"> MrNoob (273. szint)</voffset>
 <voffset=0.8em><sprite="class_icons" name="paladin_icon"> SkaDox (340. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="paladin_icon"> Alma-sama (358. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="paladin_icon"> Alma-sama (388. szint)</voffset>
 <voffset=0.8em><sprite="class_icons" name="paladin_icon"> Pöri (339. szint)</voffset>
 <voffset=0.8em><sprite="class_icons" name="paladin_icon"> GáboR (310. szint)</voffset>
 <voffset=0.8em><sprite="class_icons" name="paladin_icon"> Gyöá (275. szint)</voffset>
@@ -32,7 +32,7 @@
 <voffset=0.8em><sprite="class_icons" name="scout_icon"> Vincze Emese (285. szint)</voffset>
 <voffset=0.8em><sprite="class_icons" name="demonhunter_icon"> Nyxerya (283. szint)</voffset>
 <voffset=0.8em><sprite="class_icons" name="paladin_icon"> VITYO (278. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="paladin_icon"> Gargamel (276. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="paladin_icon"> WalkerDruida (200. szint)</voffset>
 <voffset=0.8em><sprite="class_icons" name="necromancer_icon"> l66mate (275. szint)</voffset>
 <voffset=0.8em><sprite="class_icons" name="assassin_icon"> SZEM (271. szint)</voffset>
 <voffset=0.8em><sprite="class_icons" name="paladin_icon"> icsacs (270. szint)</voffset>

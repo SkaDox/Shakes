@@ -1,50 +1,50 @@
-Warden - 330
-AdriánL - 321
-Apollo Creed - 299
-KOKA - 297
-Káosz Profeszor - 296
-KleqoNN - 290
-BvBard - 285
-HiIamMark00 - 279
-Sárgacímke - 265
-MrNoob - 263
-SkaDox - 340
-Alma-sama - 358
-Pöri - 339
-GáboR - 310
-Gyöá - 275
-Nyomi - 346
-Lorenzopump - 345
-Zozolook - 321
-YellowStrike - 313
-grammoscigi - 311
-Sajt32 - 308
-Morrigen - 308
-MurlocPaladin - 307
-Identica - 303
-Pandó - 303
 Adamszki - 301
-Bobst Loader - 298
-Toldi - 298
-Kutmandi - 295
-Konyhás néni - 289
-Májlu - 287
-Vincze Emese - 285
-Nyxerya - 283
-VITYO - 278
-Gargamel - 276
-l66mate - 275
-SZEM - 271
-icsacs - 270
-Killien01 - 267
-Tenmane - 262
-Shadee813 - 261
-Reder - 261
-taldon008 - 260
+AdriánL - 321
 Akos123 - 258
-pepperoni - 256
-Elrondur - 250
-shaki - 248
+Alma-sama - 388
+Apollo Creed - 399
 asdfm - 248
+Bobst Loader - 298
+BvBard - 285
+Elrondur - 250
+GáboR - 310
+grammoscigi - 311
+Gyöá - 275
+HiIamMark00 - 279
+icsacs - 270
+Identica - 303
+Káosz Profeszor - 296
+Killien01 - 267
+KleqoNN - 290
+KOKA - 299
+Konyhás néni - 289
+Kutmandi - 295
+l66mate - 275
+Lorenzopump - 345
 Lorxian - 245
+Májlu - 287
+Morrigen - 308
+MrNoob - 273
+MurlocPaladin - 307
+Nyomi - 346
+Nyxerya - 283
+Pandó - 303
+pepperoni - 256
+Pöri - 339
+Reder - 261
+Sajt32 - 308
+Sárgacímke - 265
+Shadee813 - 261
+shaki - 248
+SkaDox - 340
+SZEM - 271
+taldon008 - 260
+Tenmane - 262
 Tikky Mikk - 148
+Toldi - 298
+Vincze Emese - 285
+VITYO - 278
+WalkerDruida - 200
+Warden - 330
+YellowStrike - 313
+Zozolook - 321
