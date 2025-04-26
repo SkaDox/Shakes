@@ -1,130 +1,83 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using System.Globalization;
 
 class Program
 {
-    const int MaxSorok = 50;
+    const string NevekFile = "nevek.txt";
+    const string HianyzasokFile = "hianyzasok.txt";
+    const string NapiFile = "napi.txt";
+    const string EredmenyFile = "eredmeny.txt";
 
     static void Main()
     {
-        string[] nevek = new string[MaxSorok];
-        double[] hianyzasok = new double[MaxSorok];
-        List<(int index, double hianyzas)> rendezetthianyzasok = new();
-
-        int index = 0;
-
-        // Nevek beolvasása
-        if (!File.Exists("nevek.txt"))
+        if (!File.Exists(NevekFile) || !File.Exists(HianyzasokFile) || !File.Exists(NapiFile))
         {
-            Console.Error.WriteLine("Can't open 'nevek.txt' file!");
+            Console.Error.WriteLine("❌ One or more required files are missing!");
             return;
         }
 
-        var nevLines = File.ReadAllLines("nevek.txt");
-        for (; index < Math.Min(nevLines.Length, MaxSorok); index++)
+        var nevek = File.ReadAllLines(NevekFile)
+            .Select(line => line.Trim())
+            .Where(line => !string.IsNullOrEmpty(line))
+            .ToList();
+
+        var hianyzasok = File.ReadAllLines(HianyzasokFile)
+            .Select(line => double.Parse(line, CultureInfo.InvariantCulture))
+            .ToList();
+
+        // Jelenlévők beolvasása (HTML tag-ek eltávolítása, név kinyerés)
+        var jelenlevok = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var sor in File.ReadAllLines(NapiFile))
         {
-            // Az egész nevet tároljuk el, nem csak az első szót
-            nevek[index] = nevLines[index].Trim(); // Az egész név megtartása
-        }
-
-        // Hiányzások beolvasása
-        if (!File.Exists("hianyzasok.txt"))
-        {
-            Console.Error.WriteLine("Can't open 'hianyzasok.txt' file!");
-            return;
-        }
-
-        var hianyzasLines = File.ReadAllLines("hianyzasok.txt");
-        for (int i = 0; i < Math.Min(hianyzasLines.Length, MaxSorok); i++)
-        {
-            hianyzasok[i] = double.Parse(hianyzasLines[i], CultureInfo.InvariantCulture);
-        }
-
-        // Napi jelenlevők beolvasása formázott sorokból
-        if (!File.Exists("napi.txt"))
-        {
-            Console.Error.WriteLine("Can't open 'napi.txt' file!");
-            return;
-        }
-
-        HashSet<string> jelenlevok = new();
-        var napiSorok = File.ReadAllLines("napi.txt");
-
-        // A HTML tagek eltávolítása és a név kinyerése
-        foreach (var sor in napiSorok)
-        {
-            // HTML tagek eltávolítása
-            string tisztitottSor = Regex.Replace(sor, @"<[^>]+>", "").Trim();
-
-            // Az első szó (a név) kinyerése
-            string nev = tisztitottSor.Split(' ')[0].Trim();
-
-            // A nevet hozzáadjuk a jelenlevők listájához
-            if (!string.IsNullOrWhiteSpace(nev))
-            {
+            string tisztitott = Regex.Replace(sor, @"<[^>]+>", "").Trim();
+            string nev = tisztitott.Split(' ', StringSplitOptions.RemoveEmptyEntries).FirstOrDefault();
+            if (!string.IsNullOrEmpty(nev))
                 jelenlevok.Add(nev);
-            }
         }
 
         // Hiányzások frissítése
-        for (int i = 0; i < index; i++)
+        for (int i = 0; i < nevek.Count; i++)
         {
-            // Az egész nevet tartjuk meg kisbetűk nélkül
-            string nevTrimmed = nevek[i].Trim(); // Az ékezetekkel helyesen tárolt név
-            if (jelenlevok.Contains(nevTrimmed))
-            {
+            if (i >= hianyzasok.Count)
+                hianyzasok.Add(0.0); // Biztonság kedvéért, ha nem egyezne a két lista hossza
+
+            if (jelenlevok.Contains(nevek[i]))
                 hianyzasok[i] += 1;
-            }
             else
-            {
                 hianyzasok[i] = Math.Max(0.0, hianyzasok[i] - 0.25);
-            }
         }
 
-        // Rendezés
-        for (int i = 0; i < index; i++)
-        {
-            if (hianyzasok[i] > 0)
-            {
-                rendezetthianyzasok.Add((i, hianyzasok[i]));
-            }
-        }
-
-        rendezetthianyzasok = rendezetthianyzasok
+        // Csak a pozitív hiányzásokat rendezve írjuk ki
+        var rendezett = nevek
+            .Select((nev, idx) => (nev, hianyzas: hianyzasok[idx]))
+            .Where(x => x.hianyzas > 0)
             .OrderByDescending(x => x.hianyzas)
             .ToList();
 
-        // Eredmény fájlba
-        using var eredmenyFile = new StreamWriter("eredmeny.txt");
-        bool printedSeparator = false;
-        foreach (var (idx, hianyzas) in rendezetthianyzasok)
-        {
-            if (hianyzas == 0)  // Ha nincs hiányzás, nem írjuk ki
-                continue;
+        using var writer = new StreamWriter(EredmenyFile);
 
-            if (hianyzas < 5 && !printedSeparator)
+        bool separatorWritten = false;
+        foreach (var (nev, hianyzas) in rendezett)
+        {
+            if (!separatorWritten && hianyzas < 5)
             {
-                eredmenyFile.WriteLine("------------------------------");
-                printedSeparator = true;
+                writer.WriteLine("------------------------------");
+                separatorWritten = true;
             }
 
-            // A teljes nevet írjuk ki most
-            if (hianyzas >= 10)
-                eredmenyFile.WriteLine($"{nevek[idx]} - {hianyzas} !!!");
-            else if (hianyzas >= 5)
-                eredmenyFile.WriteLine($"{nevek[idx]} - {hianyzas} !");
-            else
-                eredmenyFile.WriteLine($"{nevek[idx]} - {hianyzas}");
+            string jelzes = hianyzas >= 10 ? " !!!" :
+                            hianyzas >= 5 ? " !" : "";
+
+            writer.WriteLine($"{nev} - {hianyzas}{jelzes}");
         }
 
         // Hiányzások mentése
-        File.WriteAllLines("hianyzasok.txt", hianyzasok
-            .Take(index)
-            .Select(h => h.ToString(CultureInfo.InvariantCulture)));
+        File.WriteAllLines(HianyzasokFile,
+            hianyzasok.Select(h => h.ToString(CultureInfo.InvariantCulture)));
 
         Console.WriteLine("✅ Successfully updated 'hianyzasok.txt' and 'eredmeny.txt'!");
     }

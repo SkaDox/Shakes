@@ -26,3 +26,4 @@ C:\Users\SkaDox\Documents\Shakes\Szintlépések\PlayerLevelWatcher\obj\Debug\net
 C:\Users\SkaDox\Documents\Shakes\Szintlépések\PlayerLevelWatcher\obj\Debug\net9.0\PlayerLevelWatcher.pdb
 C:\Users\SkaDox\Documents\Shakes\Szintlépések\PlayerLevelWatcher\obj\Debug\net9.0\PlayerLevelWatcher.genruntimeconfig.cache
 C:\Users\SkaDox\Documents\Shakes\Szintlépések\PlayerLevelWatcher\obj\Debug\net9.0\ref\PlayerLevelWatcher.dll
+C:\Users\SkaDox\Documents\Shakes\Szintlépések\PlayerLevelWatcher\obj\Debug\net9.0\PlayerLevelWatcher.sourcelink.json
