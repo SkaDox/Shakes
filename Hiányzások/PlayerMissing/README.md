@@ -1,4 +1,4 @@
-##Hiányzások kezelése
+## Hiányzások kezelése
 
 1. Napi.txt -be bekell másolni a Shakes alkalmazásából a hiányzókat egybe !
   - egy sor így néz ki : <voffset=0.5em><indent=1.5em>• <sprite="class_icons" name="paladin_icon"> SkaDox (340. szint)</indent></voffset>
