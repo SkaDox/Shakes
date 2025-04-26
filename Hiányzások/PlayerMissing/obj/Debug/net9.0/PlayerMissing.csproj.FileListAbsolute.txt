@@ -26,3 +26,4 @@ C:\Users\SkaDox\Documents\Shakes\Hiányzások\PlayerMissing\obj\Debug\net9.0\ref
 C:\Users\SkaDox\Documents\Shakes\Hiányzások\PlayerMissing\obj\Debug\net9.0\PlayerMissing.pdb
 C:\Users\SkaDox\Documents\Shakes\Hiányzások\PlayerMissing\obj\Debug\net9.0\PlayerMissing.genruntimeconfig.cache
 C:\Users\SkaDox\Documents\Shakes\Hiányzások\PlayerMissing\obj\Debug\net9.0\ref\PlayerMissing.dll
+C:\Users\SkaDox\Documents\Shakes\Hiányzások\PlayerMissing\obj\Debug\net9.0\PlayerMissing.sourcelink.json
