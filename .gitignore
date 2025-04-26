@@ -1,0 +1,39 @@
+# Visual Studio által generált fájlok és mappák
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+*.obj
+*.log
+
+# Build kimenetek
+bin/
+obj/
+Debug/
+Release/
+
+# Temporary fájlok
+*.tmp
+*.temp
+
+# NuGet csomagok (ha lenne)
+*.nupkg
+packages/
+
+# IDE beállítások
+*.vscode/
+*.idea/
+
+# Operációs rendszer által generált fájlok
+Thumbs.db
+Desktop.ini
+
+# Git saját dolgai
+*.orig
+
+# Backup fájlok
+*.bak
+*.old
+*.save
+
