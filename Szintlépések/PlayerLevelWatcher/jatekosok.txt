@@ -1,50 +1,49 @@
-<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> SoLa (276. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="paladin_icon"> dhioo (276. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="paladin_icon"> Boris (257. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="demonhunter_icon"> ThePlumber69 (229. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="scout_icon"> G3rY (227. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> Shadee813 (217. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="berserker_icon"> CarryMagnet (208. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="assassin_icon"> Korpa (200. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="paladin_icon"> Tombolopenge (200. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="paladin_icon"> samuraj (172. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="demonhunter_icon"> karo (164. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="demonhunter_icon"> asdfm (152. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="assassin_icon"> ALma Sama (328. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="scout_icon"> Pöri (313. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="scout_icon"> Cupido (276. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="scout_icon"> SkaDox (270. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="berserker_icon"> Tikky Mikk (317. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="battlemage_icon"> Mundane mann (285. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="mage_icon"> Gasty (275. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="scout_icon"> DUCK (274. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> HUN-BerSerk (259. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="mage_icon"> Old Fart (259. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="mage_icon"> nuna (255. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="bard_icon"> Niorta (249. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="assassin_icon"> DarkLord (249. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="demonhunter_icon"> Sliwd (249. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="paladin_icon"> GeeCoo23 (245. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="demonhunter_icon"> grammoscigi (245. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> SuperWiid (244. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> Ricsikessz (243. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="scout_icon"> Rojo (242. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="warrior_icon"> Tubák (234. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="mage_icon"> Vortex0319 (233. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="berserker_icon"> Dezmond (232. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="paladin_icon"> Molgrom (227. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="demonhunter_icon"> Khargz (223. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="warrior_icon"> Dugo (221. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="demonhunter_icon"> Sir Tripalot (213. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="berserker_icon"> Luis (203. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="druid_icon"> janker95 (200. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="druid_icon"> Káosz Professzor (198. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="warrior_icon"> Xalix (198. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="berserker_icon"> Mobil (189. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="battlemage_icon"> Division (184. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="scout_icon"> KleqoNN (180. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> Strl (174. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="druid_icon"> Hawki (172. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="assassin_icon"> HooRee (164. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="paladin_icon"> Lácsi (162. szint)</voffset>
-<voffset=0.8em><sprite="class_icons" name="scout_icon"> Gábor mester (134. szint)</voffset>
+<sprite="class_icons" name="assassin_icon"> ALma Sama (351. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="scout_icon"> Pöri (329. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="berserker_icon"> Tikky Mikk (341. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> HUN-BerSerk (338. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="assassin_icon"> Esklid013 (315. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="berserker_icon"> Dezmond (315. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="paladin_icon"> Kozsi69 (314. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="mage_icon"> Gasty (312. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="scout_icon"> Rojo (308. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> Ricsikessz (306. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="scout_icon"> DUCK (305. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="demonhunter_icon"> Sliwd (305. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> Revo1521 (298. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="scout_icon"> Valakivook (294. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="demonhunter_icon"> grammoscigi (284. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="druid_icon"> Bagoly (284. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="assassin_icon"> Agave (282. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="paladin_icon"> Fiwh (279. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="paladin_icon"> Molgrom (274. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> Jimenez (270. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> Shadee813 (264. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="berserker_icon"> Mobil (260. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="scout_icon"> SkaDox (335. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="scout_icon"> Cupido (349. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> Guzbath (338. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> Sybellanna (336. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="battlemage_icon"> Mundane mann (333. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> Sz3k3ly (332. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="mage_icon"> Old Fart (326. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="bard_icon"> Niorta (325. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="berserker_icon"> Searku (321. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> Perselus Piton (317. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="mage_icon"> Makosguba (310. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="scout_icon"> Heléna (307. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="berserker_icon"> Hellboy666 (306. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="assassin_icon"> TheDoc013 (296. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="mage_icon"> Vortex0319 (295. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> SuperWiid (293. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="warrior_icon"> Tubák (289. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="berserker_icon"> CarryMagnet (286. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="bard_icon"> greenant6666 (284. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="assassin_icon"> DarkLord (283. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> Szia (280. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="demonhunter_icon"> Khargz (273. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="necromancer_icon"> Strl (271. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="assassin_icon"> Guilmaro (270. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="mage_icon"> Beliszerelme (264. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="paladin_icon"> Tombolopenge (243. szint)</voffset>
+<voffset=0.8em><sprite="class_icons" name="berserker_icon"> Jimbo (241. szint)

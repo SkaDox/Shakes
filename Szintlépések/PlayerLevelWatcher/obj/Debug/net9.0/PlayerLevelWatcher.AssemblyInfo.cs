@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PlayerLevelWatcher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+464cb658affc5a277e64604fb8ba157a4aebb35c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64b4fdb3d365fffb99bbca601ce4bfcc37fdc9a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("PlayerLevelWatcher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlayerLevelWatcher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

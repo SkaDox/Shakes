@@ -1,24 +1,29 @@
-BvBard - 36,75 !!!
-Elrondur - 25,75 !!!
-Káosz - 22,25 !!!
-Lorxian - 19,5 !!!
-Adamszki - 16,5 !!!
-KOKA - 16,25 !!!
-Sárgacímke - 12,75 !!!
-grammoscigi - 11,25 !!!
-Apollo - 10,5 !!!
-Tikky - 10 !!!
-Májlu - 8,5 !
-YellowStrike - 7,25 !
+WalkerDruida - 25,25 !!!
+Sajt32 - 22,5 !!!
+Attila - 16,25 !!!
+Pöri - 13,5 !!!
+HiIamMark00 - 13 !!!
+fucs - 10,75 !!!
+JackIsBeast - 9,75 !
+Adamszki - 9 !
+Sárgacímke - 8 !
+grammoscigi - 7,75 !
 ------------------------------
-Tenmane - 4,75
-AdriánL - 4,5
-Azott - 2,25
-pepperoni - 2
-shaki - 1,75
-Killien01 - 1,25
-Nyomi - 1,25
-Shadee813 - 1
-Nyxerya - 0,75
-HiIamMark00 - 0,5
-Vincze - 0,25
+Májlu - 4,5
+Marsin - 4
+Shadee813 - 4
+MurlocPaladin - 3,75
+Nyxerya - 2,75
+Tenmane - 2,5
+Medvesajt - 1,75
+AronKing - 1,5
+Alma-sama - 1
+icsacs - 1
+Killien01 - 1
+WarDavid - 1
+Pog - 1
+Vincze - 1
+Zseniális - 1
+Hanti - 0,75
+KleqoNN - 0,25
+taldon008 - 0,25
